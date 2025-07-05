@@ -226,6 +226,10 @@ class CodeEditor:
         # Allow normal key processing to continue
         return None
     
+    # print a hello world message to the screen 
+    print("Hello, World!")
+    # now print it 3 times in a loop 
+    
     def on_text_change(self, event):
         """Handle text changes to trigger AI completion."""
         print(f"[DEBUG] Editor: Text changed, key: {event.keysym}")
@@ -806,7 +810,7 @@ def main():
     root.geometry(f'{width}x{height}+{x}+{y}')
     
     # Start the application
-    root.mainloop()
+    root.mainloop() 
 
 
 if __name__ == "__main__":
